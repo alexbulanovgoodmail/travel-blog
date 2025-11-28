@@ -1,0 +1,64 @@
+@use '@/assets/scss/general/variables' as *;
+@use '@/assets/scss/abstracts/mixins' as *;
+
+/* typography */
+
+.font-display {
+  @include font-display;
+}
+
+.font-header {
+  @include font-header;
+}
+
+.font-caption {
+  @include font-caption;
+}
+
+.typo-display {
+  @include typo-display;
+}
+
+.typo-caption {
+  @include typo-caption;
+}
+
+.typo-nav-link {
+  @include typo-nav-link;
+}
+
+.typo-text-link {
+  @include typo-text-link;
+}
+
+.typo-header-1 {
+  @include typo-header-1;
+}
+
+.typo-header-2 {
+  @include typo-header-2;
+}
+
+.typo-header-3 {
+  @include typo-header-3;
+}
+
+.typo-header-4 {
+  @include typo-header-4;
+}
+
+.typo-paragraph-1-bold {
+  @include typo-paragraph-1-bold;
+}
+
+.typo-paragraph-1 {
+  @include typo-paragraph-1;
+}
+
+.typo-paragraph-2 {
+  @include typo-paragraph-2;
+}
+
+.typo-paragraph-3 {
+  @include typo-paragraph-3;
+}
