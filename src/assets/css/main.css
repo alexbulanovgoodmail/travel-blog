@@ -3,4 +3,14 @@
 :root {
   --color-black: #000;
   --color-white: #fff;
+
+  /* theme */
+  --color-headline-1: #332115;
+  --color-headline-2: #0053d4;
+  --color-headline-3: #e9f9b2;
+  --color-paragraph-4: #756f6c;
+  --color-background-1: #fff;
+  --color-background-2: #f9f1e2;
+  --color-background-3: #c6dcff;
+  --color-background-4: #5f6d3b;
 }
