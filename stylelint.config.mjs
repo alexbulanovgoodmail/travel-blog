@@ -16,5 +16,7 @@ export default {
       customSyntax: 'postcss-scss',
     },
   ],
-  rules: {},
+  rules: {
+    'no-invalid-position-declaration': null,
+  },
 }
