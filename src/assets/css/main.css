@@ -5,9 +5,14 @@
   --color-white: #fff;
 
   /* theme */
+  --color-divider-1: #332115;
+  --color-divider-2: #e9f9b2;
   --color-headline-1: #332115;
   --color-headline-2: #0053d4;
   --color-headline-3: #e9f9b2;
+  --color-paragraph-1: #332115;
+  --color-paragraph-2: #0053d4;
+  --color-paragraph-3: #e9f9b2;
   --color-paragraph-4: #756f6c;
   --color-background-1: #fff;
   --color-background-2: #f9f1e2;
