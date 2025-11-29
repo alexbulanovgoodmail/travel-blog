@@ -1,0 +1,72 @@
+.marquee-coords {
+  @include typo-header-4;
+
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  white-space: nowrap;
+  color: var(--color-headline-2);
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 56px;
+    height: 100%;
+  }
+
+  &::after {
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to left, #c6dcff, #c6dcff00);
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #c6dcff, #c6dcff00);
+  }
+
+  &__container {
+    & > * + * {
+      margin-left: 16px;
+    }
+  }
+
+  // &__block > div {
+  //   @include typo-header-4;
+
+  //   display: flex;
+  //   align-items: center;
+  //   white-space: nowrap;
+  //   color: var(--color-headline-2);
+
+  //   & > * + * {
+  //     margin-left: 16px;
+  //   }
+  // }
+
+  /* Движение влево */
+  @keyframes marquee-ltr {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Движение вправо */
+  @keyframes marquee-rtl {
+    from {
+      transform: translateX(-50%);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+}
