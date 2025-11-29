@@ -1,0 +1,48 @@
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  padding: 228px 20px 20px;
+  background-color: var(--color-background-3);
+
+  @media screen and (min-width: $md) {
+    padding: 204px 20px 20px;
+  }
+
+  &__title {
+    @include typo-header-1;
+
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--color-headline-2);
+  }
+
+  &__image-container {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image {
+    display: flex;
+    width: 120px;
+    height: 110px;
+  }
+
+  &__description {
+    margin: 0 auto 160px;
+    max-width: 380px;
+  }
+
+  &__text {
+    @include typo-paragraph-2;
+
+    color: var(--color-paragraph-2);
+    text-align: center;
+  }
+
+  &__coords {
+    margin: auto -20px 0;
+  }
+}
