@@ -1,0 +1,24 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @media screen and (min-width: $lg) {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  &__left-pane {
+    background-color: var(--color-background-3);
+
+    @media screen and (min-width: $lg) {
+      grid-column: span 3 / span 3;
+    }
+  }
+
+  &__right-pane {
+    @media screen and (min-width: $lg) {
+      grid-column: span 5 / span 5;
+    }
+  }
+}

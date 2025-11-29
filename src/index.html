@@ -3,8 +3,11 @@
   <load src="common.blocks/_head/_head.html" title="Home" />
   <body>
     <div id="app">
-      <main>
-        <load src="common.blocks/_typography/_typography.html" />
+      <main class="main-container">
+        <div class="main-container__left-pane">
+          <load src="common.blocks/side-bar/side-bar.html" />
+        </div>
+        <div class="main-container__right-pane"></div>
       </main>
     </div>
     <script type="module" src="./main.ts"></script>
