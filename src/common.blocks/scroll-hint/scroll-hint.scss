@@ -1,0 +1,28 @@
+.scroll-hint {
+  @include typo-nav-link;
+
+  text-align: center;
+  color: var(--color-paragraph-1);
+
+  & > * + * {
+    margin-top: 4px;
+  }
+
+  &__arrow {
+    animation: move 1.5s linear infinite;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateY(-3px);
+    }
+
+    50% {
+      transform: translateY(3px);
+    }
+
+    100% {
+      transform: translateY(-3px);
+    }
+  }
+}
